@@ -11,13 +11,13 @@
 </head>
 <body>
 
-<nav class=" navbar1 w-full shadow-sm"></nav>
+<nav class="m-0 navbar1 w-full "></nav>
         <div class=" navbar w-full mt-0"></div>
         <!-- ----------------------- -->
         <div class=" navbar w-full mt-0 pt-0  p-12">
             <div class=" navbar-start">
                 <div class="">
-                 <a href="home.html">   <button class="btn btn-active btn-accent text-2xl font-bold	 bg-green-400">Blog</button></a>
+                <a href="index.html">    <button class="btn btn-active btn-accent text-2xl font-bold	 bg-green-400">home</button></a>
                 </div>
             </div>
 
@@ -34,33 +34,110 @@
             </div>
         </div>
         <!-- section secon ---------------  -->
-        <div class="navbar-center flex gap-3">
-             <!-- acction btn  -->
-             <div class=" action m-auto flex justify-center items-center p-8 navblur  ">
-                <div class=" flex gap-5">
-                    <button class="btn btn-outline text-2xl font-bold btn-secondary">Donation</button>
-                    <button class="btn btn-outline text-2xl font-bold  btn-secondary">History</button>
-
-                </div>
-            </div>
-        </div>
+        
 </nav>
-<div>
-<h1 class="text-5xl text-green-400 text-center font-bold p-10 " >Donation History</h1>
 
-<div class="container m-auto bg-slate-300 rounded-xl shadow-md p-16 ">
-<ul class="text-xl font-semibold flex flex-col grid-flow-col gap-y-6" id="donation-history-list">
-    <!-- Donation history will be populated here -->
-</ul></div>
-</div>
+<main class="container flex flex-col justify-center m-auto">
+    <div class="container m-auto">
+        <h1 class="text-4xl font-bold ">Important FAQ <span class="text-5xl text-green-500 font-bold ">?</span></h1>
+    </div>
 
 
 
 
-    <main>
+<!-- ------------------------------------------------------------------  -->
+<div class="mt-16 container m-auto flex flex-col justify-center">
+
+<div class="collapse collapse-arrow bg-base-200 mt-20">
+    <input type="radio" name="my-accordion-2" checked="checked" />
+    <div class="collapse-title text-xl font-medium">What is the document object model (DOM)?</div>
+    <div class="collapse-content">
+      <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree
+
+        of objects, allowing scripts (like JavaScript) to manipulate and interact with the content, structure, and style of a web page dynamically.</p>
+    </div>
+  </div>
 
 
-    </main>
-    <script src="js/history.js"></script>
+  <div class="collapse collapse-arrow bg-base-200 mt-20">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+    <div class="collapse-content">
+      <p>In JavaScript, there are several methods to select elements from the DOM:
+
+        1. getElementById:
+        
+        Selects an element by its unique ID attribute.
+        Example: document.getElementById("myElement");
+        2. getElementsByClassName:
+        
+        Selects all elements with a specific class name.
+        Returns an HTMLCollection.
+        Example: document.getElementsByClassName("myClass");
+        3. getElementsByTagName:
+        
+        Selects all elements with a specific tag name.
+        Returns an HTMLCollection.
+        Example: document.getElementsByTagName("p");
+        4. querySelector:
+        
+        Selects the first element that matches a CSS selector.
+        Example: document.querySelector(".myClass");
+        5. querySelectorAll:
+        
+        Selects all elements that match a CSS selector.
+        Returns a NodeList.
+        Example: document.querySelectorAll("p.myClass");</p>
+    </div>
+  </div>
+
+
+  <div class="collapse collapse-arrow bg-base-200 mt-20">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why it is useful?</div>
+    <div class="collapse-content">
+      <p>Event delegation is a technique in which a single event handler is attached to a parent element, and the event is propagated to its child elements. This avoids the need to attach event handlers to individual child elements, which can be inefficient for large numbers of elements.</p>
+    </div>
+  </div>
+
+  <div class="collapse collapse-arrow bg-base-200 mb-28 mt-20">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl font-medium"> How do you manipulate an elements attribute and styles using the DOM?</div>
+    <div class="collapse-content">
+        <p>Attributes:
+
+            Get attribute: element.getAttribute("attributeName");
+            Set attribute: element.setAttribute("attributeName", "value");
+            Remove attribute: element.removeAttribute("attributeName");
+            Example:
+            
+            JavaScript
+            var link = document.getElementById("myLink");
+            link.getAttribute("href"); // Get the href attribute
+            link.setAttribute("target", "_blank"); // Set the target attribute
+            link.removeAttribute("rel"); // Remove the rel attribute
+            Use code with caution.
+            
+            Styles:
+            
+            Get style: element.style.propertyName;
+            Set style: element.style.propertyName = "value";
+            Example:
+            
+            JavaScript
+            var paragraph = document.getElementById("myParagraph");
+            paragraph.style.color = "red";
+            paragraph.style.fontSize = "20px";</p>
+    </div>
+  </div>
+
+
+<!-- ----------------------------------------------------------------------  -->
+    </div>
+</main>
+
+<footer class="bg-red-50 h-28 w-full">
+</footer>
+  <script src="js/blur.js"></script>
 </body>
 </html>
