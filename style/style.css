@@ -37,8 +37,8 @@ body {
 }
 
 .navbar1.blur {
-    backdrop-filter: blur(10px); /* Blur on scroll */
-    background-color: rgba(255, 255, 255, 0.8); /* Darker background when blurred */
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.8); 
 }
 
 

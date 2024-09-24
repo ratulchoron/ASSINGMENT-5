@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         donationHistory.forEach(donation => {
             const listItem = document.createElement('li');
-            listItem.textContent = `Donation to ${donation.card}: ${donation.amount} on ${donation.date}`;
+            listItem.textContent = `${donation.amount} BDT Donation to ${donation.card}:  on ${donation.date}`;
             historyList.appendChild(listItem);
         });
     }

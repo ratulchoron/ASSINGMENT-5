@@ -17,6 +17,7 @@ document.getElementById("donate-btn1").addEventListener("click", function () {
 
     donationBox.textContent = donatedAmount.toFixed(2);
     targetAmountBox.textContent = targetAmount.toFixed(2);
+    alert("Your donation has been successfully added. Thank you for your generous contribution!.");
 
 
     const donation = {
@@ -65,6 +66,7 @@ document.getElementById("donate-btn2").addEventListener("click", function () {
 
     donationBox.textContent = donatedAmount.toFixed(2);
     targetAmountBox.textContent = targetAmount.toFixed(2);
+    alert("Your donation has been successfully added. Thank you for your generous contribution!.");
 
 
     const donation = {
@@ -114,6 +116,7 @@ document.getElementById("donate-btn3").addEventListener("click", function () {
 
     donationBox.textContent = donatedAmount.toFixed(2);
     targetAmountBox.textContent = targetAmount.toFixed(2);
+    alert("Your donation has been successfully added. Thank you for your generous contribution!.");
 
 
     const donation = {
